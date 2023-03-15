@@ -1,0 +1,29 @@
+﻿@model TSE.Models.UserModel
+
+<div>
+    <!--log in failed page-->
+    <h4>login failed</h4>
+    <h4>the following infomation is incorrect</h4>
+    <hr />
+    <dl class="row">
+        <!--outputs the username-->
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+        <!--outputs the password-->
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+    </dl>
+</div>
+<div>
+    <!--allows the user to go back to the login page -->
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to login</a>
+</div>

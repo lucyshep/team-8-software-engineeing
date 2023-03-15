@@ -1,0 +1,13 @@
+﻿@model TSE.Models.UserModel
+
+<div>
+    <!--Registration Unsuccessful page-->
+    <h4>Registration Unsuccsesful</h4>
+    <p1>Please re-enter your details</p1>
+
+</div>
+<div>
+    <!--allows the user to go back to the login page-->
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="DisplaySignUp">Back to Registration</a>
+</div>

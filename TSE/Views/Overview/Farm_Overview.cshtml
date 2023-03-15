@@ -1,0 +1,87 @@
+﻿@{
+    ViewData["Title"] = "Farm Overview";
+}
+<h1>@ViewData["Title"]
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+</h1>
+
+<p>Use the map to navigate differnt fields on the farm.
+
+    <div id='map' style='width: 800px; height: 400px;'></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiY29ubm9yc3VsbGl2YW45OSIsImEiOiJjbGV6bXZod2owMHN1M3lzOGJzemM1NHFjIn0.flK6NwK7h8YotDh45Zoi2w';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/satellite-streets-v12',
+            center: [1.42504, 52.74686],
+            zoom:14
+        });
+
+        map.on('load', () => {
+            // Add a data source containing GeoJSON data.
+            map.addSource('Field1', {
+                'type': 'geojson',
+                'data': {
+                    'type': 'Feature',
+                    'geometry': {
+                        'type': 'Polygon',
+                        // These coordinates outline Maine.
+                        'coordinates': [
+                            [
+                                [
+                                    1.4228599155649704,
+                                    52.75040354816116
+                                ],
+                                [
+                                    1.4241288089581587,
+                                    52.74904467559665
+                                ],
+                                [
+                                    1.4265364528330622,
+                                    52.74947794391494
+                                ],
+                                [
+                                    1.4256417203114324,
+                                    52.75102388893703
+                                ],
+                                [
+                                    1.4228599155649704,
+                                    52.75040354816116
+                                ]
+                            ]
+                        ]
+
+                    }
+                }
+            });
+
+            // Add a new layer to visualize the polygon.
+            map.addLayer({
+                'id': 'Field1',
+                'type': 'fill',
+                'source': 'Field1', // reference the data source
+                'layout': {},
+                'paint': {
+                    'fill-color': '#0080ff', // blue color fill
+                    'fill-opacity': 0.5
+                }
+            });
+            // Add a black outline around the polygon.
+            map.addLayer({
+                'id': 'outline',
+                'type': 'line',
+                'source': 'Field1',
+                'layout': {},
+                'paint': {
+                    'line-color': '#000',
+                    'line-width': 3
+                }
+            });
+        });
+    </script>
+
+
+</p>
+
