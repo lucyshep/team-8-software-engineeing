@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.SqlClient;
+using TSE.Controllers;
 using TSE.Models;
 
 namespace TSE.services
@@ -14,7 +15,7 @@ namespace TSE.services
             //sets successful to false 
             bool successful = false;
             //defins the sql statement 
-            string sqlState = "SELECT * FROM dbo.Users WHERE Username = @username AND Password = @password";
+            string sqlState = string.Format(@"SELECT * FROM dbo.Users WHERE Username = '{0}' AND Password = '{1}'", user.Username, PasswordEncryption.ConvertToEncrypt(user.Password));
 
             //using the sql connection with the connection string 
             using (SqlConnection connection = new SqlConnection(connectionString))
@@ -25,7 +26,7 @@ namespace TSE.services
                 //adds the username is equal to the username in the database 
                 command.Parameters.Add("@Username", System.Data.SqlDbType.NVarChar, 50).Value = user.Username;
                 //adds the password is equal to the username in the password 
-                command.Parameters.Add("@Password", System.Data.SqlDbType.NVarChar, 50).Value = user.Password;
+                command.Parameters.Add("@Password", System.Data.SqlDbType.NVarChar, 50).Value = PasswordEncryption.ConvertToEncrypt(user.Password);
 
                 //try catch statment 
                 try
