@@ -3,23 +3,146 @@
 }
 
 <!DOCTYPE html>
-
 <html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1"
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<!-- Fontawesome CSS -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="/css/style.css">    
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Farm Managment site</h1>
+                <p>This is an application developed by TSE group 8.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>About us</h2>
+                <p> Section to be Written!! </p>
+                
+            </div>
+            <div class="col-sm-12">
+                <h2>Latest Updates!</h2>
+                <p>We are constantly updating our appliation to provide better userbility and accesibility for our users. Please see what we have added and changed below. </p>
+                
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+</html>
+
+
+
+@*<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/w3css/3/w.css">
+
+
+<body>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .box {
+            background-color:red;
+            height:100vh;
+        }
+    </style>
+
+    
+    <div class="box"></div>
+
+    
+
+    <section>
+        <img class="mySlides" src="~/farm.jpg" style="width:150%" >
+        <img class="mySlides" src="~/farm2.jpg" style="width:150%">
+        <img class="mySlides" src="~/farm3.jpg" style="width:150%">
+        <img class="mySlides" src="~/farm4.jpeg" style="width:150%">
+    </section>
+
+    <script>
+    // Automatic Slideshow - change image every 3 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000);
+    }
+    </script>
+
+    <section class="w3-container w3-center" style="max-width:600px">
+        <h2 class="w3-wide">THE PROJECT</h2>
+        <p class="w3-opacity"><i>We love music</i></p>
+    </section>
+
+
+</body>
+</html>*@
+
+
+
+
+
+
+
+
+
+
+@*<html>
 <head>
     <style>
         body {
-            background-color:aqua;
-            background-image: url('../../Images/farm2.jpg');
-            margin: 0;
+            background-color:azure;
+            background-image: url("/farm2.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 10vh; /* Change this value to adjust the height of the image */
+            
             font-family: system-ui;
 
             
         }
 
         h1 {
-            color:darkgoldenrod;
+            color:blueviolet;
             margin-left: 0px;
             font-size: 70px;
+        }
+
+        p {
+            font-size: 40px;
         }
     </style>
 </head>
@@ -32,19 +155,5 @@
     <p> <a href="https://localhost:7143/login">Click here to login</a></p>
 
 </body>
-</html>
+</html>*@
 
-
-@*<body style="background-image: url(../farm.jpg); width:100%; height:100%;">
-	//Body of page goes here
-</body>
-
-<div class="text-center">
-    <!--displays the title of the page-->
-    <h1 class="display-4">Farm Management System</h1>
-
-    <!--adds a link to the login page-->
-    <a href="https://localhost:7143/login">Click here to login</a>
-    
-
-</div>*@
