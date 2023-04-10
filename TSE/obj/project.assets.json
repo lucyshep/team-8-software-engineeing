@@ -9343,19 +9343,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hayde\\.nuget\\packages\\": {}
+    "C:\\Users\\natha\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hayde\\OneDrive\\Desktop\\team-8-software-engineeing-master\\TSE\\TSE.csproj",
+      "projectUniqueName": "C:\\Users\\natha\\source\\repos\\team-software-group-8\\TSE\\TSE.csproj",
       "projectName": "TSE",
-      "projectPath": "C:\\Users\\hayde\\OneDrive\\Desktop\\team-8-software-engineeing-master\\TSE\\TSE.csproj",
-      "packagesPath": "C:\\Users\\hayde\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hayde\\OneDrive\\Desktop\\team-8-software-engineeing-master\\TSE\\obj\\",
+      "projectPath": "C:\\Users\\natha\\source\\repos\\team-software-group-8\\TSE\\TSE.csproj",
+      "packagesPath": "C:\\Users\\natha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\natha\\source\\repos\\team-software-group-8\\TSE\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\hayde\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\natha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9409,7 +9414,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
