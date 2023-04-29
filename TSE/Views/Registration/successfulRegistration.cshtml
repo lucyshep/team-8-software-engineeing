@@ -1,13 +1,15 @@
-﻿@model TSE.Models.UserModel
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@model TSE.Models.UserModel
 
 <div>
     <!--Registration successful page-->
-    <h4>Registration succsesful</h4>
-    <p1>Please now login to access the farm management system.</p1>
+    <h4>@Localizer["Registration successful"]</h4>
+    <p1>@Localizer["Please now login to access the farm management system."]</p1>
     
 </div>
 <div>
     <!--allows the user to go back to the login page-->
     @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
-    <a asp-controller="Login" asp-action="Index">Back to login</a>
+    <a asp-controller="Login" asp-action="Index">@Localizer["Back to login"]</a>
 </div>

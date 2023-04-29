@@ -1,15 +1,17 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@{
     ViewData["Title"] = "Farm Overview";
 }
 <h1>
-    @ViewData["Title"]
+    @Localizer["Farm Overview"]
 
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
 </h1>
 
 <p>
-    Use the map to navigate differnt fields on the farm.
+    @Localizer["Use the map to navigate different fields on the farm."]"
 
     <div id='map' style='width: 800px; height: 400px;'></div>
     <script>

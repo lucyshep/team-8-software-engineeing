@@ -1,8 +1,10 @@
-﻿@model TSE.Models.UserModel
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@model TSE.Models.UserModel
 
 <div>
     <!--login successful page-->
-    <h4>login succsesful</h4>
+    <h4>@Localizer["login succsessful"]</h4>
     <hr />
     <dl class="row">
         <!--outputs the user Id-->
@@ -32,5 +34,5 @@
 <div>
     <!--allows the user to go back to the login page-->
     @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
-    <a asp-action="Index">Back to login</a>
+    <a asp-action="Index">@Localizer["Back to login"]</a>
 </div>

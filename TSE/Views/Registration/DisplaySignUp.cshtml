@@ -1,6 +1,8 @@
-﻿@model TSE.Models.UserModel
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@model TSE.Models.UserModel
 
-<h4>Sign Up</h4>
+<h4>@Localizer["Sign Up"]</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
