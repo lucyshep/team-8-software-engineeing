@@ -1,4 +1,7 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -23,19 +26,19 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <h1>Farm Managment site</h1>
-                <p>This is an application developed by TSE group 8.</p>
+                <h1>@Localizer["Farm Management Site"]</h1>
+                <p>@Localizer["This is an application developed by TSE group 8."]</p>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-12">
-                <h2>About us</h2>
-                <p> Section to be Written!! </p>
+                <h2>@Localizer["About us"]</h2>
+                <p> @Localizer["Section to be Written"] </p>
                 
             </div>
             <div class="col-sm-12">
-                <h2>Latest Updates!</h2>
-                <p>We are constantly updating our appliation to provide better userbility and accesibility for our users. Please see what we have added and changed below. </p>
+                <h2>@Localizer["Latest Updates"]</h2>
+                <p>@Localizer["We are constantly updating our appliation to provide better userbility and accesibility for our users. Please see what we have added and changed below."] </p>
                 
             </div>
         </div>
