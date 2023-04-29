@@ -767,3 +767,9 @@ C:\Users\james\source\repos\team-8-software-engineeing\TSE\obj\Debug\net6.0\TSE.
 C:\Users\james\source\repos\team-8-software-engineeing\TSE\obj\Debug\net6.0\ref\TSE.dll
 C:\Users\james\source\repos\team-8-software-engineeing\TSE\obj\Debug\net6.0\TSE.Resources.Views.Shared._Layout.en-US.resources
 C:\Users\james\source\repos\team-8-software-engineeing\TSE\obj\Debug\net6.0\TSE.Resources.Views.Shared._Layout.fr-FR.resources
+C:\Users\james\source\repos\team-8-software-engineeing\TSE\obj\Debug\net6.0\TSE.Resources.Views.Shared._Culture.de-DE.resources
+C:\Users\james\source\repos\team-8-software-engineeing\TSE\obj\Debug\net6.0\TSE.Resources.Views.Shared._Culture.en-US.resources
+C:\Users\james\source\repos\team-8-software-engineeing\TSE\obj\Debug\net6.0\TSE.Resources.Views.Shared._Culture.fr-FR.resources
+C:\Users\james\source\repos\team-8-software-engineeing\TSE\obj\Debug\net6.0\TSE.Resources.Views.Shared._Culture.zh-Hans.resources
+C:\Users\james\source\repos\team-8-software-engineeing\TSE\obj\Debug\net6.0\TSE.Resources.Views.Shared._Layout.de-DE.resources
+C:\Users\james\source\repos\team-8-software-engineeing\TSE\obj\Debug\net6.0\TSE.Resources.Views.Shared._Layout.zh-Hans.resources

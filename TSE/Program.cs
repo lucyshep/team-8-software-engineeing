@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.AspNetCore.Localization;
 using System.Globalization;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,13 +19,12 @@ builder.Services.AddLocalization(options =>
 
 builder.Services.Configure<RequestLocalizationOptions>(options =>
 {
-    var supportedCultures = new[]
+    var supportedCultures = new[] 
     {
         new CultureInfo("en-US"),
         new CultureInfo("fr-FR"),
         new CultureInfo("de-DE"),
         new CultureInfo("zh-Hans")
-
     };
     options.DefaultRequestCulture = new RequestCulture("en-US");
     options.SupportedUICultures = supportedCultures;
