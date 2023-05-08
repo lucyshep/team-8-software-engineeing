@@ -1,6 +1,184 @@
-﻿@{
+﻿@using System.Data;
+@using System.Data.SqlClient;
+
+@{
     ViewData["Title"] = "Farm Overview";
+
+    //creates the lists to store the staff members in each field
+    List<string> Field_1 = new List<string>();
+    List<string> Field2 = new List<string>();
+    List<string> Field3 = new List<string>();
+    List<string> Field4 = new List<string>();
+    List<string> Field5 = new List<string>();
+    List<string> Field6 = new List<string>();
+    List<string> Field7 = new List<string>();
+    List<string> Field8 = new List<string>();
+    List<string> Field9 = new List<string>();
+
+    //gets the staff members in field 1
+    string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog = LoginUsers; Integrated Security = True; Connect Timeout = 30; Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+    SqlConnection conn1 = new SqlConnection(connectionString);
+    conn1.Open();
+    //gets the username form the database of everyone who is assigned to field 1
+    string sqlStatement1 = "SELECT Username From dbo.users WHERE AssignedTo = 1";
+    SqlCommand cmd = new SqlCommand(sqlStatement1, conn1);
+    SqlDataReader reader;
+    reader = cmd.ExecuteReader();
+    int count = reader.FieldCount;
+    while (reader.Read())
+    {
+        for (int i = 0; i < count; i++)
+        {
+            Field_1.Add(reader[i].ToString());
+        }
+    }
+    conn1.Close();
+
+    //gets the staff members in field 2
+    SqlConnection conn2 = new SqlConnection(connectionString);
+    conn2.Open();
+    //gets the username form the database of everyone who is assigned to field 2
+    string sqlStatement2 = "SELECT Username From dbo.users WHERE AssignedTo = 2";
+    SqlCommand cmd2 = new SqlCommand(sqlStatement2, conn2);
+    SqlDataReader reader2;
+    reader2 = cmd2.ExecuteReader();
+    int count2 = reader2.FieldCount;
+    while (reader2.Read())
+    {
+        for (int i = 0; i < count2; i++)
+        {
+            Field2.Add(reader2[i].ToString());
+        }
+    }
+    conn2.Close();
+
+    //gets the staff members in field 3
+    SqlConnection conn3 = new SqlConnection(connectionString);
+    conn3.Open();
+    //gets the username form the database of everyone who is assigned to field 3
+    string sqlStatement3 = "SELECT Username From dbo.users WHERE AssignedTo = 3";
+    SqlCommand cmd3 = new SqlCommand(sqlStatement3, conn3);
+    SqlDataReader reader3;
+    reader3 = cmd3.ExecuteReader();
+    int count3 = reader3.FieldCount;
+    while (reader3.Read())
+    {
+        for (int i = 0; i < count3; i++)
+        {
+            Field3.Add(reader3[i].ToString());
+        }
+    }
+    conn3.Close();
+
+    //gets the staff members in field 4
+    SqlConnection conn4 = new SqlConnection(connectionString);
+    conn4.Open();
+    //gets the username form the database of everyone who is assigned to field 4
+    string sqlStatement4 = "SELECT Username From dbo.users WHERE AssignedTo = 4";
+    SqlCommand cmd4 = new SqlCommand(sqlStatement4, conn4);
+    SqlDataReader reader4;
+    reader4 = cmd4.ExecuteReader();
+    int count4 = reader4.FieldCount;
+    while (reader4.Read())
+    {
+        for (int i = 0; i < count4; i++)
+        {
+            Field4.Add(reader4[i].ToString());
+        }
+    }
+    conn4.Close();
+
+    //gets the staff members in field 5
+    SqlConnection conn5 = new SqlConnection(connectionString);
+    conn5.Open();
+    //gets the username form the database of everyone who is assigned to field 5
+    string sqlStatement5 = "SELECT Username From dbo.users WHERE AssignedTo = 5";
+    SqlCommand cmd5 = new SqlCommand(sqlStatement5, conn5);
+    SqlDataReader reader5;
+    reader5 = cmd5.ExecuteReader();
+    int count5 = reader5.FieldCount;
+    while (reader5.Read())
+    {
+        for (int i = 0; i < count5; i++)
+        {
+            Field5.Add(reader5[i].ToString());
+        }
+    }
+    conn5.Close();
+
+    //gets the staff members in field 6
+    SqlConnection conn6 = new SqlConnection(connectionString);
+    conn6.Open();
+    //gets the username form the database of everyone who is assigned to field 6
+    string sqlStatement6 = "SELECT Username From dbo.users WHERE AssignedTo = 6";
+    SqlCommand cmd6 = new SqlCommand(sqlStatement6, conn6);
+    SqlDataReader reader6;
+    reader6 = cmd6.ExecuteReader();
+    int count6 = reader6.FieldCount;
+    while (reader6.Read())
+    {
+        for (int i = 0; i < count6; i++)
+        {
+            Field6.Add(reader6[i].ToString());
+        }
+    }
+    conn6.Close();
+
+    //gets the staff members in field 7
+    SqlConnection conn7 = new SqlConnection(connectionString);
+    conn7.Open();
+    //gets the username form the database of everyone who is assigned to field 7
+    string sqlStatement7 = "SELECT Username From dbo.users WHERE AssignedTo = 7";
+    SqlCommand cmd7 = new SqlCommand(sqlStatement7, conn7);
+    SqlDataReader reader7;
+    reader7 = cmd7.ExecuteReader();
+    int count7 = reader7.FieldCount;
+    while (reader7.Read())
+    {
+        for (int i = 0; i < count7; i++)
+        {
+            Field7.Add(reader7[i].ToString());
+        }
+    }
+    conn7.Close();
+
+    //gets the staff members in field 8
+    SqlConnection conn8 = new SqlConnection(connectionString);
+    conn8.Open();
+    //gets the username form the database of everyone who is assigned to field 8
+    string sqlStatement8 = "SELECT Username From dbo.users WHERE AssignedTo = 8";
+    SqlCommand cmd8 = new SqlCommand(sqlStatement8, conn8);
+    SqlDataReader reader8;
+    reader8 = cmd8.ExecuteReader();
+    int count8 = reader8.FieldCount;
+    while (reader8.Read())
+    {
+        for (int i = 0; i < count8; i++)
+        {
+            Field8.Add(reader8[i].ToString());
+        }
+    }
+    conn8.Close();
+
+    //gets the staff members in field 9
+    SqlConnection conn9 = new SqlConnection(connectionString);
+    conn9.Open();
+    //gets the username form the database of everyone who is assigned to field 9
+    string sqlStatement9 = "SELECT Username From dbo.users WHERE AssignedTo = 9";
+    SqlCommand cmd9 = new SqlCommand(sqlStatement9, conn9);
+    SqlDataReader reader9;
+    reader9 = cmd9.ExecuteReader();
+    int count9 = reader9.FieldCount;
+    while (reader9.Read())
+    {
+        for (int i = 0; i < count9; i++)
+        {
+            Field9.Add(reader9[i].ToString());
+        }
+    }
+    conn9.Close();
 }
+
 <h1>
     @ViewData["Title"]
 
@@ -9,6 +187,7 @@
 </h1>
 
 <p>
+
     Use the map to navigate differnt fields on the farm.
 
     <div id='map' style='width: 800px; height: 400px;'></div>
@@ -17,180 +196,369 @@
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/satellite-streets-v12',
-            center: [1.4249423959483067, 52.75091887317191 ],
+            center: [1.4249423959483067, 52.75091887317191],
             zoom: 14
         });
 
+        //adds the polygon for field 1
         map.on('load', () => {
-            map.addSource('Fields', 
-                {'type': 'geojson', 
-                'data':{
-                    'type': 'Feature', 
-                    'geometry': {
-                        'type': 'MultiPolygon',
-                        'coordinates': [
-                            [
+            map.addSource('Field 1',
+                {
+                    'type': 'geojson',
+                    'data': {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'MultiPolygon',
+                            'coordinates': [
                                 [
-                                    
-                                    [ 1.4223303461695025, 52.74753461012651 ],
-                                    [ 1.4236292660823437, 52.74769561169444 ],
-                                    [ 1.4239819920766195, 52.746634721950585 ],
-                                    [ 1.4227742590014714, 52.7465064043393 ],
-                                    [ 1.4225968807940035, 52.746891535348766 ],
-                                    [ 1.4224547359033863, 52.74687012515275 ],
-                                    [ 1.4222414067017155, 52.74752388000471 ]
+                                    [
+
+                                        [1.4223303461695025, 52.74753461012651],
+                                        [1.4236292660823437, 52.74769561169444],
+                                        [1.4239819920766195, 52.746634721950585],
+                                        [1.4227742590014714, 52.7465064043393],
+                                        [1.4225968807940035, 52.746891535348766],
+                                        [1.4224547359033863, 52.74687012515275],
+                                        [1.4222414067017155, 52.74752388000471]
+                                    ]
+
                                 ]
 
-                            ], 
-                            [
-                                [
-                                    [1.4220405002492669, 52.7486746900241],
-                                    [ 1.4234246317135728, 52.74885275260351 ],
-                                    [ 1.423658982544623, 52.74810932616873 ],
-                                    [ 1.4234928550314692, 52.74810932616873 ],
-                                    [ 1.4236314725603734, 52.747752825079516 ],
-                                    [ 1.4222693675820324, 52.747580524039535 ],
-                                    [ 1.4219594022694935, 52.74835839075766 ],
-                                    [ 1.4221250388357305, 52.74839544773121 ],
-                                    [1.4220405002492669, 52.7486746900241]
-                                ]
-                            ],
-                            [
-                                [
-                                    [ 1.4216752818735472, 52.74980731229235 ],
-                                    [ 1.4220570830161137, 52.748738882225865 ],
-                                    [ 1.4234731109798417, 52.748912840659926 ],
-                                    [ 1.4232849377338255, 52.74933334351101 ],
-                                    [ 1.423159463042225, 52.749317939751734 ],
-                                    [ 1.4230828653432468, 52.74951110499444 ],
-                                    [ 1.4229569057489755, 52.74951110499444 ],
-                                    [ 1.4228918912952508,  52.74971343238545 ],
-                                    [ 1.4227149050383332, 52.74971343238545 ],
-                                    [ 1.4226361940088736, 52.749909373029084 ],
-                                    [ 1.4216752818735472, 52.74980731229235 ]
-                                ]
-                            ],
-                            [
-                                [
-                                    [ 1.4228599155649704, 52.75040354816116 ],
-                                    [ 1.4241288089581587, 52.74904467559665 ],
-                                    [ 1.4265364528330622, 52.74947794391494 ],
-                                    [ 1.4256417203114324, 52.75102388893703 ],
-                                    [ 1.4228599155649704, 52.75040354816116 ]
-                                ]
-                            ],
-                            [
-                                [
-                                    [ 1.4257890936161175, 52.75120092457769 ],
-                                    [ 1.4279866141135926, 52.75163561597671 ],
-                                    [ 1.4285769983907528, 52.75059405877491 ],
-                                    [ 1.4282312728659292, 52.75054357600081 ],
-                                    [ 1.428302268365826, 52.75046427365342 ],
-                                    [ 1.4278612189358455, 52.75036339237289 ],
-                                    [ 1.427967464352264, 52.75018338354087 ],
-                                    [ 1.4278364817223235, 52.750161794215614 ],
-                                    [ 1.427871498425901, 52.75001792957778 ],
-                                    [ 1.4273717456618442, 52.74994603910082 ],
-                                    [ 1.4274665611462751, 52.74985980732001 ],
-                                    [ 1.42735944954552, 52.749823889250365 ],
-                                    [ 1.427418334458622, 52.74966593242033 ],
-                                    [ 1.4273350451065312, 52.74963005191822 ],
-                                    [ 1.4273821067300787, 52.74949376938321 ],
-                                    [ 1.4272751760823894, 52.749479429686915 ],
-                                    [ 1.426823668265257, 52.749357587102566 ],
-                                    [ 1.4257771483787565, 52.75121539794026 ]
-                                ]
-                            ],
-                            [
-                                [
-                                    [ 1.4221933904217963, 52.7512982901558 ],
-                                    [ 1.4226149930577492, 52.75055305600111 ],
-                                    [ 1.4254729047208343, 52.75109982429211 ],
-                                    [ 1.4250297874269222, 52.75187094939099 ],
-                                    [ 1.4221933904217963, 52.7512982901558 ]
-                                ]
-                            ],
-                            [
-                                [
-                                    [ 1.4219013132487817, 52.75214192927777 ],
-                                    [ 1.4222849728878941, 52.75138567616162 ],
-                                    [ 1.4249905924616257, 52.75193467714047 ],
-                                    [ 1.4245719437082869, 52.75269296211226 ],
-                                    [ 1.4219013132487817, 52.75214192927777]
-                                ]
-                            ],
-                            [
-                                [
-                                        [ 1.4249537517752628, 52.752684965553925 ],
-                                        [ 1.425683793625069, 52.7512982901558 ],
-                                        [ 1.428037504435963, 52.75174355332351 ],
-                                        [ 1.4278575548337358, 52.752118004873665 ],
-                                        [ 1.427949850591574, 52.75214192927777 ],
-                                        [ 1.4273942215169484, 52.75318134181805 ],
-                                        [ 1.4249537517752628, 52.752684965553925 ]
-                                ]
-                            ],
-                            [
-                                [
-                                        [1.422779754147058, 52.753502221937595 ],
-                                        [1.4232422267488403, 52.75252509976741 ],
-                                        [1.424519429258737, 52.7527569457921 ],
-                                        [1.4239937484641985, 52.75373517341586 ],
-                                        [1.422779754147058, 52.753502221937595 ]
-                                ]
                             ]
-                        ]
+                        }
                     }
-                }
-            });
-
-
+                });
             // Add a new layer to visualize the polygon.
-            map.addLayer({
-                'id': 'Fields',
-                'type': 'fill',
-                'source': 'Fields', // reference the data source
-                'layout': {},
-                'paint': {
-                    'fill-color': '#0080ff', // blue color fill
-                    'fill-opacity': 0.5
-                }
-            });
-            // Add a black outline around the polygon.
-            map.addLayer({
-                'id': 'outline',
-                'type': 'line',
-                'source': 'Fields',
-                'layout': {},
-                'paint': {
-                    'line-color': '#000',
-                    'line-width': 2
-                }
-            });
-       
-    
-            // When a click event occurs on a feature in the states layer,
-            // open a popup at the location of the click, with description
-            // HTML from the click event's properties.
-            map.on('click', 'Fields', (e) => {
-                new mapboxgl.Popup()
-                    .setLngLat(e.lngLat)
-                    .setHTML('Fields')
-                    .addTo(map);
-            });
+            map.addLayer({ 'id': 'Field 1', 'type': 'fill', 'source': 'Field 1', 'layout': {}, 'paint': { 'fill-color': '#0080ff', 'fill-opacity': 0.5 } });
+            // When a click event occurs on a feature in the states layer,open a popup at the location of the click, with description HTML from the click event's properties.
+            map.on('click', 'Field 1', (e) => { new mapboxgl.Popup().setLngLat(e.lngLat).setHTML('field 1').addTo(map); });
+            //e.features[0].properties.name Change the cursor to a pointer when the mouse is over the states layer.
+            map.on('mouseenter', 'Field 1', () => { map.getCanvas().style.cursor = 'pointer'; });
+            // Change the cursor back to a pointer when it leaves the states layer.
+            map.on('mouseleave', 'Field 1', () => { map.getCanvas().style.cursor = ''; });
+        });
 
-            //e.features[0].properties.name
-            // Change the cursor to a pointer when
-            // the mouse is over the states layer.
-            map.on('mouseenter', 'Fields', () => {
-                map.getCanvas().style.cursor = 'pointer';
-            });
+        //adds the polygon for field 2
+        map.on('load', () => {
+            map.addSource('Field 2',
+                {
+                    'type': 'geojson',
+                    'data': {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'MultiPolygon',
+                            'coordinates': [
+                                [
+                                    [
 
-            // Change the cursor back to a pointer
-            // when it leaves the states layer.
-            map.on('mouseleave', 'Fields', () => {
-                map.getCanvas().style.cursor = '';
-            });
+                                        [1.4220405002492669, 52.7486746900241],
+                                        [1.4234246317135728, 52.74885275260351],
+                                        [1.423658982544623, 52.74810932616873],
+                                        [1.4234928550314692, 52.74810932616873],
+                                        [1.4236314725603734, 52.747752825079516],
+                                        [1.4222693675820324, 52.747580524039535],
+                                        [1.4219594022694935, 52.74835839075766],
+                                        [1.4221250388357305, 52.74839544773121],
+                                        [1.4220405002492669, 52.7486746900241]
+                                    ]
+
+                                ]
+
+                            ]
+                        }
+                    }
+                });
+            // Add a new layer to visualize the polygon.
+            map.addLayer({ 'id': 'Field 2', 'type': 'fill', 'source': 'Field 2', 'layout': {}, 'paint': { 'fill-color': '#0080ff', 'fill-opacity': 0.5 } });
+            // When a click event occurs on a feature in the states layer,open a popup at the location of the click, with description HTML from the click event's properties.
+            map.on('click', 'Field 2', (e) => { new mapboxgl.Popup().setLngLat(e.lngLat).setHTML('Field 2').addTo(map); });
+            //e.features[0].properties.name Change the cursor to a pointer when the mouse is over the states layer.
+            map.on('mouseenter', 'Field 2', () => { map.getCanvas().style.cursor = 'pointer'; });
+            // Change the cursor back to a pointer when it leaves the states layer.
+            map.on('mouseleave', 'Field 2', () => { map.getCanvas().style.cursor = ''; });
+        });
+
+        //adds the polygon for field 3
+        map.on('load', () => {
+            map.addSource('Field 3',
+                {
+                    'type': 'geojson',
+                    'data': {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'MultiPolygon',
+                            'coordinates': [
+                                [
+                                    [
+
+
+                                        [1.4216752818735472, 52.74980731229235],
+                                        [1.4220570830161137, 52.748738882225865],
+                                        [1.4234731109798417, 52.748912840659926],
+                                        [1.4232849377338255, 52.74933334351101],
+                                        [1.423159463042225, 52.749317939751734],
+                                        [1.4230828653432468, 52.74951110499444],
+                                        [1.4229569057489755, 52.74951110499444],
+                                        [1.4228918912952508, 52.74971343238545],
+                                        [1.4227149050383332, 52.74971343238545],
+                                        [1.4226361940088736, 52.749909373029084],
+                                        [1.4216752818735472, 52.74980731229235]
+
+                                    ]
+
+                                ]
+
+                            ]
+                        }
+                    }
+                });
+            // Add a new layer to visualize the polygon.
+            map.addLayer({ 'id': 'Field 3', 'type': 'fill', 'source': 'Field 3', 'layout': {}, 'paint': { 'fill-color': '#0080ff', 'fill-opacity': 0.5 } });
+            // When a click event occurs on a feature in the states layer,open a popup at the location of the click, with description HTML from the click event's properties.
+            map.on('click', 'Field 3', (e) => { new mapboxgl.Popup().setLngLat(e.lngLat).setHTML('Field 3').addTo(map); });
+            //e.features[0].properties.name Change the cursor to a pointer when the mouse is over the states layer.
+            map.on('mouseenter', 'Field 3', () => { map.getCanvas().style.cursor = 'pointer'; });
+            // Change the cursor back to a pointer when it leaves the states layer.
+            map.on('mouseleave', 'Field 3', () => { map.getCanvas().style.cursor = ''; });
+        });
+
+        //adds the polygon for field 4
+        map.on('load', () => {
+            map.addSource('Field 4',
+                {
+                    'type': 'geojson',
+                    'data': {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'MultiPolygon',
+                            'coordinates': [
+                                [
+                                    [
+
+
+                                        [1.4228599155649704, 52.75040354816116],
+                                        [1.4241288089581587, 52.74904467559665],
+                                        [1.4265364528330622, 52.74947794391494],
+                                        [1.4256417203114324, 52.75102388893703],
+                                        [1.4228599155649704, 52.75040354816116]
+
+                                    ]
+
+                                ]
+
+                            ]
+                        }
+                    }
+                });
+            // Add a new layer to visualize the polygon.
+            map.addLayer({ 'id': 'Field 4', 'type': 'fill', 'source': 'Field 4', 'layout': {}, 'paint': { 'fill-color': '#0080ff', 'fill-opacity': 0.5 } });
+            // When a click event occurs on a feature in the states layer,open a popup at the location of the click, with description HTML from the click event's properties.
+            map.on('click', 'Field 4', (e) => { new mapboxgl.Popup().setLngLat(e.lngLat).setHTML('Field 4').addTo(map); });
+            //e.features[0].properties.name Change the cursor to a pointer when the mouse is over the states layer.
+            map.on('mouseenter', 'Field 4', () => { map.getCanvas().style.cursor = 'pointer'; });
+            // Change the cursor back to a pointer when it leaves the states layer.
+            map.on('mouseleave', 'Field 4', () => { map.getCanvas().style.cursor = ''; });
+        });
+
+        //adds the polygon for field 5
+        map.on('load', () => {
+            map.addSource('Field 5',
+                {
+                    'type': 'geojson',
+                    'data': {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'MultiPolygon',
+                            'coordinates': [
+                                [
+                                    [
+
+
+                                        [1.4257890936161175, 52.75120092457769],
+                                        [1.4279866141135926, 52.75163561597671],
+                                        [1.4285769983907528, 52.75059405877491],
+                                        [1.4282312728659292, 52.75054357600081],
+                                        [1.428302268365826, 52.75046427365342],
+                                        [1.4278612189358455, 52.75036339237289],
+                                        [1.427967464352264, 52.75018338354087],
+                                        [1.4278364817223235, 52.750161794215614],
+                                        [1.427871498425901, 52.75001792957778],
+                                        [1.4273717456618442, 52.74994603910082],
+                                        [1.4274665611462751, 52.74985980732001],
+                                        [1.42735944954552, 52.749823889250365],
+                                        [1.427418334458622, 52.74966593242033],
+                                        [1.4273350451065312, 52.74963005191822],
+                                        [1.4273821067300787, 52.74949376938321],
+                                        [1.4272751760823894, 52.749479429686915],
+                                        [1.426823668265257, 52.749357587102566],
+                                        [1.4257771483787565, 52.75121539794026]
+
+                                    ]
+
+                                ]
+
+                            ]
+                        }
+                    }
+                });
+            // Add a new layer to visualize the polygon.
+            map.addLayer({ 'id': 'Field 5', 'type': 'fill', 'source': 'Field 5', 'layout': {}, 'paint': { 'fill-color': '#0080ff', 'fill-opacity': 0.5 } });
+            // When a click event occurs on a feature in the states layer,open a popup at the location of the click, with description HTML from the click event's properties.
+            map.on('click', 'Field 5', (e) => { new mapboxgl.Popup().setLngLat(e.lngLat).setHTML('Field 5').addTo(map); });
+            //e.features[0].properties.name Change the cursor to a pointer when the mouse is over the states layer.
+            map.on('mouseenter', 'Field 5', () => { map.getCanvas().style.cursor = 'pointer'; });
+            // Change the cursor back to a pointer when it leaves the states layer.
+            map.on('mouseleave', 'Field 5', () => { map.getCanvas().style.cursor = ''; });
+        });
+
+        //adds the polygon for field 6
+        map.on('load', () => {
+            map.addSource('Field 6',
+                {
+                    'type': 'geojson',
+                    'data': {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'MultiPolygon',
+                            'coordinates': [
+                                [
+                                    [
+
+
+                                        [1.4221933904217963, 52.7512982901558],
+                                        [1.4226149930577492, 52.75055305600111],
+                                        [1.4254729047208343, 52.75109982429211],
+                                        [1.4250297874269222, 52.75187094939099],
+                                        [1.4221933904217963, 52.7512982901558]
+
+                                    ]
+
+                                ]
+
+                            ]
+                        }
+                    }
+                });
+            // Add a new layer to visualize the polygon.
+            map.addLayer({ 'id': 'Field 6', 'type': 'fill', 'source': 'Field 6', 'layout': {}, 'paint': { 'fill-color': '#0080ff', 'fill-opacity': 0.5 } });
+            // When a click event occurs on a feature in the states layer,open a popup at the location of the click, with description HTML from the click event's properties.
+            map.on('click', 'Field 6', (e) => { new mapboxgl.Popup().setLngLat(e.lngLat).setHTML('Field 6').addTo(map); });
+            //e.features[0].properties.name Change the cursor to a pointer when the mouse is over the states layer.
+            map.on('mouseenter', 'Field 6', () => { map.getCanvas().style.cursor = 'pointer'; });
+            // Change the cursor back to a pointer when it leaves the states layer.
+            map.on('mouseleave', 'Field 6', () => { map.getCanvas().style.cursor = ''; });
+        });
+
+        //adds the polygon for field 7
+        map.on('load', () => {
+            map.addSource('Field 7',
+                {
+                    'type': 'geojson',
+                    'data': {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'MultiPolygon',
+                            'coordinates': [
+                                [
+                                    [
+
+
+                                        [1.4219013132487817, 52.75214192927777],
+                                        [1.4222849728878941, 52.75138567616162],
+                                        [1.4249905924616257, 52.75193467714047],
+                                        [1.4245719437082869, 52.75269296211226],
+                                        [1.4219013132487817, 52.75214192927777]
+
+                                    ]
+
+                                ]
+
+                            ]
+                        }
+                    }
+                });
+            // Add a new layer to visualize the polygon.
+            map.addLayer({ 'id': 'Field 7', 'type': 'fill', 'source': 'Field 7', 'layout': {}, 'paint': { 'fill-color': '#0080ff', 'fill-opacity': 0.5 } });
+            // When a click event occurs on a feature in the states layer,open a popup at the location of the click, with description HTML from the click event's properties.
+            map.on('click', 'Field 7', (e) => { new mapboxgl.Popup().setLngLat(e.lngLat).setHTML('Field 7').addTo(map); });
+            //e.features[0].properties.name Change the cursor to a pointer when the mouse is over the states layer.
+            map.on('mouseenter', 'Field 7', () => { map.getCanvas().style.cursor = 'pointer'; });
+            // Change the cursor back to a pointer when it leaves the states layer.
+            map.on('mouseleave', 'Field 7', () => { map.getCanvas().style.cursor = ''; });
+        });
+
+        //adds the polygon for field 8
+        map.on('load', () => {
+            map.addSource('Field 8',
+                {
+                    'type': 'geojson',
+                    'data': {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'MultiPolygon',
+                            'coordinates': [
+                                [
+                                    [
+                                        [1.4249537517752628, 52.752684965553925],
+                                        [1.425683793625069, 52.7512982901558],
+                                        [1.428037504435963, 52.75174355332351],
+                                        [1.4278575548337358, 52.752118004873665],
+                                        [1.427949850591574, 52.75214192927777],
+                                        [1.4273942215169484, 52.75318134181805],
+                                        [1.4249537517752628, 52.752684965553925]
+
+                                    ]
+
+                                ]
+
+                            ]
+                        }
+                    }
+                });
+            // Add a new layer to visualize the polygon.
+            map.addLayer({ 'id': 'Field 8', 'type': 'fill', 'source': 'Field 8', 'layout': {}, 'paint': { 'fill-color': '#0080ff', 'fill-opacity': 0.5 } });
+            // When a click event occurs on a feature in the states layer,open a popup at the location of the click, with description HTML from the click event's properties.
+            map.on('click', 'Field 8', (e) => { new mapboxgl.Popup().setLngLat(e.lngLat).setHTML('Field 8').addTo(map); });
+            //e.features[0].properties.name Change the cursor to a pointer when the mouse is over the states layer.
+            map.on('mouseenter', 'Field 8', () => { map.getCanvas().style.cursor = 'pointer'; });
+            // Change the cursor back to a pointer when it leaves the states layer.
+            map.on('mouseleave', 'Field 8', () => { map.getCanvas().style.cursor = ''; });
+        });
+
+        //adds the polygon for field 9
+        map.on('load', () => {
+            map.addSource('Field 9',
+                {
+                    'type': 'geojson',
+                    'data': {
+                        'type': 'Feature',
+                        'geometry': {
+                            'type': 'MultiPolygon',
+                            'coordinates': [
+                                [
+                                    [
+                                        [1.422779754147058, 52.753502221937595],
+                                        [1.4232422267488403, 52.75252509976741],
+                                        [1.424519429258737, 52.7527569457921],
+                                        [1.4239937484641985, 52.75373517341586],
+                                        [1.422779754147058, 52.753502221937595]
+
+                                    ]
+
+                                ]
+
+                            ]
+                        }
+                    }
+                });
+            // Add a new layer to visualize the polygon.
+            map.addLayer({ 'id': 'Field 9', 'type': 'fill', 'source': 'Field 9', 'layout': {}, 'paint': { 'fill-color': '#0080ff', 'fill-opacity': 0.5 } });
+            // When a click event occurs on a feature in the states layer,open a popup at the location of the click, with description HTML from the click event's properties.
+            map.on('click', 'Field 9', (e) => { new mapboxgl.Popup().setLngLat(e.lngLat).setHTML('Field 9').addTo(map); });
+            //e.features[0].properties.name Change the cursor to a pointer when the mouse is over the states layer.
+            map.on('mouseenter', 'Field 9', () => { map.getCanvas().style.cursor = 'pointer'; });
+            // Change the cursor back to a pointer when it leaves the states layer.
+            map.on('mouseleave', 'Field 9', () => { map.getCanvas().style.cursor = ''; });
         });
 
     </script>
@@ -198,3 +566,125 @@
 
 </p>
 
+
+@{
+    <h2>Field Overviews</h2>
+
+    //outputs the table for the staff in field 1
+    <h4> Field 1</h4>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }</style>
+    <table style="width:50%"> <tr> <th>Staff Name   </th> </tr> </table>
+    foreach (string s in Field_1)
+    {
+        <table style="width:50%"> <tr> <td>@s</td> </tr> </table>
+    }
+    //outputs the table for the staff in field 2
+    <h4> Field 2</h4>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }</style>
+    <table style="width:50%"> <tr> <th>Staff Name   </th> </tr> </table>
+    foreach (string s in Field2)
+    {
+        <table style="width:50%"> <tr> <td>@s</td> </tr> </table>
+    }
+    //outputs the table for the staff in field 3
+    <h4> Field 3</h4>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }</style>
+    <table style="width:50%"> <tr> <th>Staff Name   </th> </tr> </table>
+    foreach (string s in Field3)
+    {
+        <table style="width:50%"> <tr> <td>@s</td> </tr> </table>
+    }
+    //outputs the table for the staff in field 4
+    <h4> Field 4</h4>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }</style>
+    <table style="width:50%"> <tr> <th>Staff Name   </th> </tr> </table>
+    foreach (string s in Field4)
+    {
+        <table style="width:50%"> <tr> <td>@s</td> </tr> </table>
+    }
+    //outputs the table for the staff in field 5
+    <h4> Field 5</h4>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }</style>
+    <table style="width:50%"> <tr> <th>Staff Name   </th> </tr> </table>
+    foreach (string s in Field5)
+    {
+        <table style="width:50%"> <tr> <td>@s</td> </tr> </table>
+    }
+    //outputs the table for the staff in field 6
+    <h4> Field 6</h4>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }</style>
+    <table style="width:50%"> <tr> <th>Staff Name   </th> </tr> </table>
+    foreach (string s in Field6)
+    {
+        <table style="width:50%"> <tr> <td>@s</td> </tr> </table>
+    }
+    //outputs the table for the staff in field 7
+    <h4> Field 7</h4>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }</style>
+    <table style="width:50%"> <tr> <th>Staff Name   </th> </tr> </table>
+    foreach (string s in Field7)
+    {
+        <table style="width:50%"> <tr> <td>@s</td> </tr> </table>
+    }
+    //outputs the table for the staff in field 8
+    <h4> Field 8</h4>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }</style>
+    <table style="width:50%"> <tr> <th>Staff Name   </th> </tr> </table>
+    foreach (string s in Field8)
+    {
+        <table style="width:50%"> <tr> <td>@s</td> </tr> </table>
+    }
+    //outputs the table for the staff in field 9
+    <h4> Field 9</h4>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }</style>
+    <table style="width:50%"> <tr> <th>Staff Name   </th> </tr> </table>
+    foreach (string s in Field9)
+    {
+        <table style="width:50%"> <tr> <td>@s</td> </tr> </table>
+    }
+
+
+
+}
+
+
+
+
+
+          

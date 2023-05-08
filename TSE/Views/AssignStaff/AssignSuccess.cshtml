@@ -1,0 +1,25 @@
+﻿@model TSE.Models.AssignStaff
+
+<h3>assign success</h3>
+<div>
+    <h4>AssignStaff</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StaffName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StaffName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FieldNo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FieldNo)
+        </dd>
+    </dl>
+
+    <form asp-action="AssignSuccess">
+        <a asp-action="AssignStaffForm">Back to List</a>
+    </form>
+</div>
