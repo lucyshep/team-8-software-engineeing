@@ -1,6 +1,9 @@
-﻿@{
-    ViewData["Title"] = "Privacy Policy";
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+@{
+    ViewData["Title"] = @Localizer["Privacy Policy"];
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>We take your privacy seriously. Any personal information you provide on our website, such as your name, email address, or phone number, will be kept confidential and will not be sold, rented, or shared with any third party. We use cookies to enhance your browsing experience and gather non-personal information such as the number of visitors to our site and the pages they visit. This information is used to improve our website and better understand our audience. By using our website, you consent to our privacy policy. If you have any questions or concerns, please contact us</p>
+<p>@Localizer["We take your privacy seriously. Any personal information you provide on our website, such as your name, email address, or phone number, will be kept confidential and will not be sold, rented, or shared with any third party. We use cookies to enhance your browsing experience and gather non-personal information such as the number of visitors to our site and the pages they visit. This information is used to improve our website and better understand our audience. By using our website, you consent to our privacy policy. If you have any questions or concerns, please contact us"]</p>

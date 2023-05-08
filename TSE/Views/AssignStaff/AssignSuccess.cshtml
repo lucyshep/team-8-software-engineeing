@@ -1,8 +1,11 @@
-﻿@model TSE.Models.AssignStaff
+﻿@using Microsoft.AspNetCore.Mvc.Localization
 
-<h3>assign success</h3>
+@inject IViewLocalizer Localizer
+@model TSE.Models.AssignStaff
+
+<h3>@Localizer["assign success"]</h3>
 <div>
-    <h4>AssignStaff</h4>
+    <h4>@Localizer["AssignStaff"]</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
@@ -20,6 +23,6 @@
     </dl>
 
     <form asp-action="AssignSuccess">
-        <a asp-action="AssignStaffForm">Back to List</a>
+        <a asp-action="AssignStaffForm">@Localizer["Back to List"]</a>
     </form>
 </div>

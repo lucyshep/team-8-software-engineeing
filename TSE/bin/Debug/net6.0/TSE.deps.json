@@ -13,6 +13,20 @@
         },
         "runtime": {
           "TSE.dll": {}
+        },
+        "resources": {
+          "de-DE/TSE.resources.dll": {
+            "locale": "de-DE"
+          },
+          "en-US/TSE.resources.dll": {
+            "locale": "en-US"
+          },
+          "fr-FR/TSE.resources.dll": {
+            "locale": "fr-FR"
+          },
+          "zh-Hans/TSE.resources.dll": {
+            "locale": "zh-Hans"
+          }
         }
       },
       "Humanizer.Core/2.2.0": {

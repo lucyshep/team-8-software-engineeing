@@ -1,5 +1,8 @@
 ﻿@using System.Data;
 @using System.Data.SqlClient;
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
 
 @{
     ViewData["Title"] = "Farm Overview";
@@ -188,7 +191,7 @@
 
 <p>
 
-    Use the map to navigate differnt fields on the farm.
+    @Localizer["Use the map to navigate differnt fields on the farm."]"
 
     <div id='map' style='max-width: 800px; min-height: 400px;'></div>
     <script>
