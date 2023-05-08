@@ -22,7 +22,8 @@ namespace TSE.Controllers
             if (auth.valid(usermodel))
             {
                 //creates new veiw called successfulLogin
-                return View("successfulLogin", usermodel);
+                return Redirect("~/Overview/Farm_Overview");
+                //return View("successfulLogin", usermodel);
             }
 
             //else - not valid
