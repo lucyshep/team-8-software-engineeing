@@ -1,0 +1,24 @@
+﻿@model TSE.Models.AssignStaff
+
+<div>
+    <h4>unable to assign the staff, please try again</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FieldNo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FieldNo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StaffName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.StaffName)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="AssignStaffForm">Back to List</a>
+</div>
