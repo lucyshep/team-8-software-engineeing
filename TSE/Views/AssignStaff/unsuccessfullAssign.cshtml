@@ -1,7 +1,10 @@
-﻿@model TSE.Models.AssignStaff
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+@model TSE.Models.AssignStaff
 
 <div>
-    <h4>unable to assign the staff, please try again</h4>
+    <h4>@Localizer["unable to assign the staff, please try again"]</h4>
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
@@ -20,5 +23,5 @@
 </div>
 <div>
     @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
-    <a asp-action="AssignStaffForm">Back to List</a>
+    <a asp-action="AssignStaffForm">@Localizer["Back to List"]</a>
 </div>

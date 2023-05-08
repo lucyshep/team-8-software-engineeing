@@ -1,9 +1,12 @@
-﻿@model TSE.Models.UserModel
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+
+@inject IViewLocalizer Localizer
+@model TSE.Models.UserModel
 
 <div>
     <!--log in failed page-->
-    <h4>login failed</h4>
-    <h4>the following infomation is incorrect</h4>
+    <h4>@Localizer["login failed"]</h4>
+    <h4>@Localizer["the following infomation is incorrect"]</h4>
     <hr />
     <dl class="row">
         <!--outputs the username-->
@@ -25,5 +28,5 @@
 <div>
     <!--allows the user to go back to the login page -->
     @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
-    <a asp-action="Index">Back to login</a>
+    <a asp-action="Index">@Localizer["Back to login"]</a>
 </div>

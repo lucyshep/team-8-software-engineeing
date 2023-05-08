@@ -1,6 +1,9 @@
-﻿@model TSE.Models.AssignStaff
+﻿@using Microsoft.AspNetCore.Mvc.Localization
 
-<h4>AssignStaff</h4>
+@inject IViewLocalizer Localizer
+@model TSE.Models.AssignStaff
+
+<h4>@Localizer["AssignStaff"]</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -17,7 +20,8 @@
                 <label for="fieldNo"></label>
 
                 <select name="fieldNo" id="fieldNo">
-                    <option value="not assigned to field">not assigned</option>
+                    <option value="not assigned to field">li class="nav-link">
+                            <partial name="_Culture" />@Localizer["not assigned"]</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -40,6 +44,6 @@
 </div>
 
 <div>
-    <a asp-action="index">Back to List</a>
+    <a asp-action="index">@Localizer["Back to List"]</a>
 </div>
 

@@ -9,77 +9,81 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TSE
 build_property.RootNamespace = TSE
-build_property.ProjectDir = C:\Users\natha\OneDrive\Documents\GitHub\team-8-software-engineeing\TSE\
+build_property.ProjectDir = C:\Users\james\Documents\GitHub\team-8-software-engineeing\TSE\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\natha\OneDrive\Documents\GitHub\team-8-software-engineeing\TSE
+build_property.MSBuildProjectDirectory = C:\Users\james\Documents\GitHub\team-8-software-engineeing\TSE
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/natha/OneDrive/Documents/GitHub/team-8-software-engineeing/TSE/Views/AssignStaff/assignStaffForm.cshtml]
+[C:/Users/james/Documents/GitHub/team-8-software-engineeing/TSE/Views/AssignStaff/assignStaffForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWduU3RhZmZcYXNzaWduU3RhZmZGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/natha/OneDrive/Documents/GitHub/team-8-software-engineeing/TSE/Views/AssignStaff/AssignSuccess.cshtml]
+[C:/Users/james/Documents/GitHub/team-8-software-engineeing/TSE/Views/AssignStaff/AssignSuccess.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWduU3RhZmZcQXNzaWduU3VjY2Vzcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/natha/OneDrive/Documents/GitHub/team-8-software-engineeing/TSE/Views/AssignStaff/unsuccessfullAssign.cshtml]
+[C:/Users/james/Documents/GitHub/team-8-software-engineeing/TSE/Views/AssignStaff/unsuccessfullAssign.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzaWduU3RhZmZcdW5zdWNjZXNzZnVsbEFzc2lnbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/natha/OneDrive/Documents/GitHub/team-8-software-engineeing/TSE/Views/Home/Index.cshtml]
+[C:/Users/james/Documents/GitHub/team-8-software-engineeing/TSE/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/natha/OneDrive/Documents/GitHub/team-8-software-engineeing/TSE/Views/Home/Privacy.cshtml]
+[C:/Users/james/Documents/GitHub/team-8-software-engineeing/TSE/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/natha/OneDrive/Documents/GitHub/team-8-software-engineeing/TSE/Views/Login/Index.cshtml]
+[C:/Users/james/Documents/GitHub/team-8-software-engineeing/TSE/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/natha/OneDrive/Documents/GitHub/team-8-software-engineeing/TSE/Views/Login/successfulLogin.cshtml]
+[C:/Users/james/Documents/GitHub/team-8-software-engineeing/TSE/Views/Login/successfulLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cc3VjY2Vzc2Z1bExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/natha/OneDrive/Documents/GitHub/team-8-software-engineeing/TSE/Views/Login/unsuccessfulLogin.cshtml]
+[C:/Users/james/Documents/GitHub/team-8-software-engineeing/TSE/Views/Login/unsuccessfulLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cdW5zdWNjZXNzZnVsTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/natha/OneDrive/Documents/GitHub/team-8-software-engineeing/TSE/Views/Overview/Farm_Overview.cshtml]
+[C:/Users/james/Documents/GitHub/team-8-software-engineeing/TSE/Views/Overview/Farm_Overview.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3ZlcnZpZXdcRmFybV9PdmVydmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/natha/OneDrive/Documents/GitHub/team-8-software-engineeing/TSE/Views/Registration/DisplaySignUp.cshtml]
+[C:/Users/james/Documents/GitHub/team-8-software-engineeing/TSE/Views/Registration/DisplaySignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmF0aW9uXERpc3BsYXlTaWduVXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/natha/OneDrive/Documents/GitHub/team-8-software-engineeing/TSE/Views/Registration/successfulRegistration.cshtml]
+[C:/Users/james/Documents/GitHub/team-8-software-engineeing/TSE/Views/Registration/successfulRegistration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmF0aW9uXHN1Y2Nlc3NmdWxSZWdpc3RyYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/natha/OneDrive/Documents/GitHub/team-8-software-engineeing/TSE/Views/Registration/unsuccessfulRegistration.cshtml]
+[C:/Users/james/Documents/GitHub/team-8-software-engineeing/TSE/Views/Registration/unsuccessfulRegistration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cmF0aW9uXHVuc3VjY2Vzc2Z1bFJlZ2lzdHJhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/natha/OneDrive/Documents/GitHub/team-8-software-engineeing/TSE/Views/Shared/Error.cshtml]
+[C:/Users/james/Documents/GitHub/team-8-software-engineeing/TSE/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/natha/OneDrive/Documents/GitHub/team-8-software-engineeing/TSE/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/james/Documents/GitHub/team-8-software-engineeing/TSE/Views/Shared/_Culture.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DdWx0dXJlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/james/Documents/GitHub/team-8-software-engineeing/TSE/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/natha/OneDrive/Documents/GitHub/team-8-software-engineeing/TSE/Views/_ViewImports.cshtml]
+[C:/Users/james/Documents/GitHub/team-8-software-engineeing/TSE/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/natha/OneDrive/Documents/GitHub/team-8-software-engineeing/TSE/Views/_ViewStart.cshtml]
+[C:/Users/james/Documents/GitHub/team-8-software-engineeing/TSE/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/natha/OneDrive/Documents/GitHub/team-8-software-engineeing/TSE/Views/Shared/_Layout.cshtml]
+[C:/Users/james/Documents/GitHub/team-8-software-engineeing/TSE/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-v6wisgbnck

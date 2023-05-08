@@ -1,6 +1,9 @@
-﻿@model TSE.Models.UserModel
+﻿@using Microsoft.AspNetCore.Mvc.Localization
 
-<h4>please log in</h4>
+@inject IViewLocalizer Localizer
+@model TSE.Models.UserModel
+
+<h4>@Localizer["please log in"]</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -24,7 +27,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">@Localizer["Back to List"]</a>
 </div>
 
 @section Scripts {
