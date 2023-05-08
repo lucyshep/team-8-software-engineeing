@@ -7,7 +7,7 @@ namespace TSE.services
     public class AssignStaffService
     {
         //sets the connection string to the connection to the databse 
-        string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog = LoginUsers; Integrated Security = True; Connect Timeout = 30; Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog = Users; Integrated Security = True; Connect Timeout = 30; Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         //fucntion for assigning staff memeber
         public bool findStaffMember(AssignStaff staffMemeber)
