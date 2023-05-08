@@ -11,7 +11,7 @@
 <p>
     Use the map to navigate differnt fields on the farm.
 
-    <div id='map' style='width: 800px; height: 400px;'></div>
+    <div id='map' style='max-width: 800px; min-height: 400px;'></div>
     <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoiY29ubm9yc3VsbGl2YW45OSIsImEiOiJjbGV6bXZod2owMHN1M3lzOGJzemM1NHFjIn0.flK6NwK7h8YotDh45Zoi2w';
         var map = new mapboxgl.Map({
@@ -31,7 +31,6 @@
                         'coordinates': [
                             [
                                 [
-                                    
                                     [ 1.4223303461695025, 52.74753461012651 ],
                                     [ 1.4236292660823437, 52.74769561169444 ],
                                     [ 1.4239819920766195, 52.746634721950585 ],
@@ -175,7 +174,7 @@
             map.on('click', 'Fields', (e) => {
                 new mapboxgl.Popup()
                     .setLngLat(e.lngLat)
-                    .setHTML('Fields')
+                    .setHTML('<table><tr><th>Company</th><th>Contact</th><th>Country</th></tr><tr><td>Alfreds Futterkiste</td><td>Maria Anders</td><td>Germany</td></tr><tr><td>Centro comercial Moctezuma</td><td>Francisco Chang</td><td>Mexico</td></tr></table>')
                     .addTo(map);
             });
 
