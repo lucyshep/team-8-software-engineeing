@@ -3,7 +3,7 @@
 @inject IViewLocalizer Localizer
 @model TSE.Models.AssignStaff
 
-<h4>@Localizer["AssignStaff"]</h4>
+<h4>@Localizer["Assign Staff"]</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -20,7 +20,7 @@
                 <label for="fieldNo"></label>
 
                 <select name="fieldNo" id="fieldNo">
-                    <option value="not assigned to field">not assigned</option>
+                    <option value="not assigned to field">@Localizer["Not Assigned"]</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
