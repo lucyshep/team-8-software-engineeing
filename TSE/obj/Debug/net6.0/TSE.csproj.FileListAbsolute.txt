@@ -2852,3 +2852,15 @@ C:\Users\james\Documents\GitHub\team-8-software-engineeing\TSE\obj\Debug\net6.0\
 C:\Users\james\Documents\GitHub\team-8-software-engineeing\TSE\obj\Debug\net6.0\TSE.pdb
 C:\Users\james\Documents\GitHub\team-8-software-engineeing\TSE\obj\Debug\net6.0\TSE.genruntimeconfig.cache
 C:\Users\james\Documents\GitHub\team-8-software-engineeing\TSE\obj\Debug\net6.0\ref\TSE.dll
+C:\Users\james\Documents\GitHub\team-8-software-engineeing\TSE\obj\Debug\net6.0\TSE.Resources.Views.AssignStaff.assignStaffForm.de-DE.resources
+C:\Users\james\Documents\GitHub\team-8-software-engineeing\TSE\obj\Debug\net6.0\TSE.Resources.Views.AssignStaff.assignStaffForm.en-US.resources
+C:\Users\james\Documents\GitHub\team-8-software-engineeing\TSE\obj\Debug\net6.0\TSE.Resources.Views.AssignStaff.assignStaffForm.fr-FR.resources
+C:\Users\james\Documents\GitHub\team-8-software-engineeing\TSE\obj\Debug\net6.0\TSE.Resources.Views.AssignStaff.assignStaffForm.zh-Hans.resources
+C:\Users\james\Documents\GitHub\team-8-software-engineeing\TSE\obj\Debug\net6.0\TSE.Resources.Views.AssignStaff.AssignSuccess.de-DE.resources
+C:\Users\james\Documents\GitHub\team-8-software-engineeing\TSE\obj\Debug\net6.0\TSE.Resources.Views.AssignStaff.AssignSuccess.en-US.resources
+C:\Users\james\Documents\GitHub\team-8-software-engineeing\TSE\obj\Debug\net6.0\TSE.Resources.Views.AssignStaff.AssignSuccess.fr-FR.resources
+C:\Users\james\Documents\GitHub\team-8-software-engineeing\TSE\obj\Debug\net6.0\TSE.Resources.Views.AssignStaff.AssignSuccess.zh-Hans.resources
+C:\Users\james\Documents\GitHub\team-8-software-engineeing\TSE\obj\Debug\net6.0\TSE.Resources.Views.AssignStaff.unsuccessfulAssign.en-US.resources
+C:\Users\james\Documents\GitHub\team-8-software-engineeing\TSE\obj\Debug\net6.0\TSE.Resources.Views.AssignStaff.unsuccessfulAssign.de-DE.resources
+C:\Users\james\Documents\GitHub\team-8-software-engineeing\TSE\obj\Debug\net6.0\TSE.Resources.Views.AssignStaff.unsuccessfulAssign.fr-FR.resources
+C:\Users\james\Documents\GitHub\team-8-software-engineeing\TSE\obj\Debug\net6.0\TSE.Resources.Views.AssignStaff.unsuccessfulAssign.zh-Hans.resources
